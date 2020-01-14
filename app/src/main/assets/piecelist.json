@@ -1,0 +1,364 @@
+[{
+  "id": "",
+  "name": "ALCA TRASEIRA"
+}, {
+  "id": "",
+  "name": "ANTENA"
+}, {
+  "id": "",
+  "name": "ARANHA FAROL"
+}, {
+  "id": "",
+  "name": "ARO FAROL"
+}, {
+  "id": "",
+  "name": "ARO RODA DIANTEIRA"
+}, {
+  "id": "",
+  "name": "ARO RODA TRASEIRA"
+}, {
+  "id": "",
+  "name": "ASA TANQUE DIREITA"
+}, {
+  "id": "",
+  "name": "ASA TANQUE ESQUERDA"
+}, {
+  "id": "",
+  "name": "ASSOALHO"
+}, {
+  "id": "",
+  "name": "BAGAGEIRO TRASEIRO"
+}, {
+  "id": "",
+  "name": "BANCO"
+}, {
+  "id": "",
+  "name": "BAU"
+}, {
+  "id": "",
+  "name": "BICO DE INJECAO"
+}, {
+  "id": "",
+  "name": "BICO FRONTAL"
+}, {
+  "id": "",
+  "name": "BOBINA DE IGNIÇÃO"
+}, {
+  "id": "",
+  "name": "BOMBA DE COMBUSTIVEL"
+}, {
+  "id": "",
+  "name": "BORRACHA ESTRIBO"
+}, {
+  "id": "",
+  "name": "BOTA"
+}, {
+  "id": "",
+  "name": "BUCHA RODA TRASEIRA"
+}, {
+  "id": "",
+  "name": "CABEÇOTE"
+}, {
+  "id": "",
+  "name": "CACHIMBO"
+}, {
+  "id": "",
+  "name": "CAMARA DE AR"
+}, {
+  "id": "",
+  "name": "CAMBIO"
+}, {
+  "id": "",
+  "name": "CAPA CORRENTE"
+}, {
+  "id": "",
+  "name": "CAPA DE CHUVA"
+}, {
+  "id": "",
+  "name": "CAPACETE"
+}, {
+  "id": "",
+  "name": "CARCACA PAINEL INF."
+}, {
+  "id": "",
+  "name": "CARCACA PAINEL INT."
+}, {
+  "id": "",
+  "name": "CARCACA PAINEL SUP VIDRO"
+}, {
+  "id": "",
+  "name": "CARCACA PAINEL SUP."
+}, {
+  "id": "",
+  "name": "CARENAGEM FAROL"
+}, {
+  "id": "",
+  "name": "CARENAGEM FAROL DIR."
+}, {
+  "id": "",
+  "name": "CARENAGEM FAROL ESQ."
+}, {
+  "id": "",
+  "name": "CARENAGEM M"
+}, {
+  "id": "",
+  "name": "CDI"
+}, {
+  "id": "",
+  "name": "CHAVE LUZ"
+}, {
+  "id": "",
+  "name": "CILINDRO FREIO INFERIOR"
+}, {
+  "id": "",
+  "name": "CILINDRO FREIO SUPERIOR"
+}, {
+  "id": "",
+  "name": "CILINDRO MOTOR"
+}, {
+  "id": "",
+  "name": "CONTATO DE IGINICAO"
+}, {
+  "id": "",
+  "name": "CORPO DE INJECAO"
+}, {
+  "id": "",
+  "name": "CORREIA"
+}, {
+  "id": "",
+  "name": "CUBO RODA DIANTEIRA"
+}, {
+  "id": "",
+  "name": "CUBO RODA TRASEIRA"
+}, {
+  "id": "",
+  "name": "DISCO DE EMBREAGEM"
+}, {
+  "id": "",
+  "name": "DISCO DE FREIO DIANTEIRO"
+}, {
+  "id": "",
+  "name": "DISCO DE FREIO TRASEIRO"
+}, {
+  "id": "",
+  "name": "EIXO QUADRO ELASTICO"
+}, {
+  "id": "",
+  "name": "EIXO RODA DIANTEIRA"
+}, {
+  "id": "",
+  "name": "EIXO RODA TRASEIRA"
+}, {
+  "id": "",
+  "name": "EMBLEMA FRONTAL"
+}, {
+  "id": "",
+  "name": "EMBREAGEM COMPLETA"
+}, {
+  "id": "",
+  "name": "ENGRENAGEM PARTIDA"
+}, {
+  "id": "",
+  "name": "ESCAPAMENTO"
+}, {
+  "id": "",
+  "name": "FAROL DE MILHA"
+}, {
+  "id": "",
+  "name": "FIAÇÃO PRINCIPAL"
+}, {
+  "id": "",
+  "name": "FLEXIVEL FREIO"
+}, {
+  "id": "",
+  "name": "GUIA CORRENTE TRAMSMISSÃO"
+}, {
+  "id": "",
+  "name": "JAQUETA"
+}, {
+  "id": "",
+  "name": "JUNTA TAMPA LATERAL"
+}, {
+  "id": "",
+  "name": "KIT A SEM BORRACHAS"
+}, {
+  "id": "",
+  "name": "MANICOTO DIR."
+}, {
+  "id": "",
+  "name": "MANICOTO ESQ."
+}, {
+  "id": "",
+  "name": "MANOPLA DIREITA"
+}, {
+  "id": "",
+  "name": "MANOPLA ESQUERDA"
+}, {
+  "id": "",
+  "name": "MATA CACHORRO"
+}, {
+  "id": "",
+  "name": "MESA INFERIOR"
+}, {
+  "id": "",
+  "name": "MESA SUPERIOR"
+}, {
+  "id": "",
+  "name": "MOCHILA"
+}, {
+  "id": "",
+  "name": "MOLA CAVALETE CENTRAL"
+}, {
+  "id": "",
+  "name": "MOTOR DE ARRANQUE"
+}, {
+  "id": "",
+  "name": "MUDULO CENTRAL"
+}, {
+  "id": "",
+  "name": "PARALAMA DIANTEIRO"
+}, {
+  "id": "",
+  "name": "PARALAMA TRASEIRO"
+}, {
+  "id": "",
+  "name": "PEDAL DE FREIO"
+}, {
+  "id": "",
+  "name": "PEDALEIRA TRASEIRA DIR"
+}, {
+  "id": "",
+  "name": "PEDALEIRA TRASEIRA ESQ."
+}, {
+  "id": "",
+  "name": "PLACA DE PARTIDA"
+}, {
+  "id": "",
+  "name": "POLIA DOS ROLETES"
+}, {
+  "id": "",
+  "name": "POLIA VENTOINHA"
+}, {
+  "id": "",
+  "name": "PRISIONEIRO DA COROA"
+}, {
+  "id": "",
+  "name": "PROTETOR DO ESCAPAMENTO"
+}, {
+  "id": "",
+  "name": "PROTETOR GLADEADOR"
+}, {
+  "id": "",
+  "name": "PUNHO DE PARTIDA"
+}, {
+  "id": "",
+  "name": "QUADRO ELASTICO"
+}, {
+  "id": "",
+  "name": "RABETA CENTRAL"
+}, {
+  "id": "",
+  "name": "RABETA DIREITA"
+}, {
+  "id": "",
+  "name": "RABETA ESQUERDA"
+}, {
+  "id": "",
+  "name": "RAIO RODA DIANTEIRA"
+}, {
+  "id": "",
+  "name": "RAIO RODA TRASEIRA"
+}, {
+  "id": "",
+  "name": "REFIL BOMBA DE COMBUSTIVEL"
+}, {
+  "id": "",
+  "name": "REGULADOR RETIFICADOR"
+}, {
+  "id": "",
+  "name": "RELE PARTIDA"
+}, {
+  "id": "",
+  "name": "RELE PISCA"
+}, {
+  "id": "",
+  "name": "RETENTOR DE VALVULA"
+}, {
+  "id": "",
+  "name": "RETENTOR EIXO TRASEIRO"
+}, {
+  "id": "",
+  "name": "RETENTOR VIRA BREKIM"
+}, {
+  "id": "",
+  "name": "ROLETES"
+}, {
+  "id": "",
+  "name": "SAPATA DE EMBREAGEM"
+}, {
+  "id": "",
+  "name": "STOP FREIO TRASEIRO"
+}, {
+  "id": "",
+  "name": "SUPORTE DA PEDALEIRA DIR"
+}, {
+  "id": "",
+  "name": "SUPORTE DA PEDALEIRA ESQ."
+}, {
+  "id": "",
+  "name": "SUPORTE E ESCOVA MOTOR DE ARRANQUE"
+}, {
+  "id": "",
+  "name": "SUPORTE GPS"
+}, {
+  "id": "",
+  "name": "SUPORTE PARALAMA DIANTEIRO"
+}, {
+  "id": "",
+  "name": "TAMPA DE COMBUSTIVEL"
+}, {
+  "id": "",
+  "name": "TAMPA DO PINHAO"
+}, {
+  "id": "",
+  "name": "TAMPA INFERIOR"
+}, {
+  "id": "",
+  "name": "TAMPA LATERAL DIREITA"
+}, {
+  "id": "",
+  "name": "TAMPA LATERAL DIREITA COMPLEMENTO"
+}, {
+  "id": "",
+  "name": "TAMPA LATERAL ESQUERDA"
+}, {
+  "id": "",
+  "name": "TAMPA LATERAL ESQUERDA COMPLEMENTO"
+}, {
+  "id": "",
+  "name": "TAMPA MOTOR DIR"
+}, {
+  "id": "",
+  "name": "TAMPA MOTOR ESQ."
+}, {
+  "id": "",
+  "name": "TAMPA PISO DIR."
+}, {
+  "id": "",
+  "name": "TAMPA PISO ESQ."
+}, {
+  "id": "",
+  "name": "TANQUE"
+}, {
+  "id": "",
+  "name": "TORNEIRA DE COMBUSTIVEL"
+}, {
+  "id": "",
+  "name": "VALVULA ADMISSÃO"
+}, {
+  "id": "",
+  "name": "VALVULA ESCAPE"
+}, {
+  "id": "",
+  "name": "VARETA FREIO TRASEIRO"
+}]

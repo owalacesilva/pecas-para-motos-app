@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Pecas para Motos</string>
+
+    <string name="btn_wizard_next">Próximo</string>
+    <string name="btn_wizard_previous">Anterior</string>
+    <string name="btn_wizard_finish">Atualizar</string>
+    <string name="btn_generate_report">Gerar Relatório</string>
+    <string name="btn_submit">Enviar</string>
+
+    <string name="label_save">Salvar</string>
+
+    <string name="cap_mechanic_report_checklist">Recomendar a revisão dos seguintes itens</string>
+    <string name="cap_mechanic_report_checklist_details">Selecione os que deseja REVISAR</string>
+    <string name="cap_mechanic_report_services">Recomendar os seguintes serviços</string>
+    <string name="cap_mechanic_report_services_details">Selecione os serviços abaixo</string>
+    <string name="cap_mechanic_report_piece_list">Gostaria que o mecânico olhasse também</string>
+    <string name="cap_mechanic_report_item_prices">Defina o preço dos items abaixo</string>
+    <string name="cap_mechanic_report_annotation">Adicione um comentário</string>
+
+    <string name="title_activity_item_list">Gerar Relatório</string>
+    <string name="title_activity_annotation">Gerar Relatório</string>
+    <string name="title_activity_item_prices">Gerar Relatório</string>
+    <string name="title_activity_mechanic_report_preview">Gerar Relatório</string>
+
+    <!-- Strings related to Settings -->
+    <string name="lorem_ipsum">Lorem Ipsum</string>
+    <string name="lorem_ipsum_is_simply">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a
+        galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+        the leap into electronic typesetting, remaining essentially unchanged.
+    </string>
+
+    <string name="file_provider_authority" translatable="false">br.com.pecasparamotos.fileprovider</string>
+</resources>

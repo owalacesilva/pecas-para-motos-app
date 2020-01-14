@@ -1,0 +1,79 @@
+package br.com.pecasparamotos.activities
+
+import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+import android.widget.Button
+import android.widget.ListView
+import com.google.android.material.snackbar.Snackbar
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar
+import br.com.pecasparamotos.R
+import br.com.pecasparamotos.adapters.ListItemPriceAdapter
+import br.com.pecasparamotos.adapters.ReportItemListAdapter
+import br.com.pecasparamotos.models.Item
+
+import kotlinx.android.synthetic.main.activity_item_prices.*
+import java.util.ArrayList
+
+class ItemPricesActivity : AppCompatActivity() {
+
+    /**
+     *
+     */
+    private var listView: ListView? = null
+
+    /**
+     *
+     */
+    private var itemsList: ArrayList<Item>? = null
+
+    /**
+     *
+     */
+    private var listItemPriceAdapter: ListItemPriceAdapter? = null
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_item_prices)
+
+        val toolbar = findViewById<Toolbar>(R.id.toolbar)
+        setSupportActionBar(toolbar)
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+        supportActionBar!!.title = resources.getString(R.string.title_activity_item_prices)
+
+        itemsList = intent.extras!!.getParcelableArrayList("items")
+        listItemPriceAdapter = ListItemPriceAdapter(this, itemsList!!)
+
+        listView = findViewById(R.id.lvItemPrices)
+        listView!!.adapter = listItemPriceAdapter
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_btn_submit, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            android.R.id.home -> {
+                setResult(RESULT_CANCELED)
+                finish()
+                return true
+            }
+            R.id.action_submit -> {
+                onSubmit()
+                return true
+            }
+            else -> return super.onOptionsItemSelected(item)
+        }
+    }
+
+    private fun onSubmit() {
+        val it = intent
+        it.setClass(this, AnnotationActivity::class.java)
+        it.putExtra("items", itemsList)
+
+        startActivityForResult(it, 0)
+    }
+}
