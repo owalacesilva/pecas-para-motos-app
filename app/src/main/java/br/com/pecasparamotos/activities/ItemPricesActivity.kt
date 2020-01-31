@@ -3,17 +3,14 @@ package br.com.pecasparamotos.activities
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Button
-import android.widget.ListView
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import br.com.pecasparamotos.R
 import br.com.pecasparamotos.adapters.ListItemPriceAdapter
-import br.com.pecasparamotos.adapters.ReportItemListAdapter
 import br.com.pecasparamotos.models.Item
 
-import kotlinx.android.synthetic.main.activity_item_prices.*
 import java.util.ArrayList
 
 class ItemPricesActivity : AppCompatActivity() {
@@ -21,7 +18,7 @@ class ItemPricesActivity : AppCompatActivity() {
     /**
      *
      */
-    private var listView: ListView? = null
+    private var recyclerView: RecyclerView? = null
 
     /**
      *
@@ -43,10 +40,14 @@ class ItemPricesActivity : AppCompatActivity() {
         supportActionBar!!.title = resources.getString(R.string.title_activity_item_prices)
 
         itemsList = intent.extras!!.getParcelableArrayList("items")
-        listItemPriceAdapter = ListItemPriceAdapter(this, itemsList!!)
+        listItemPriceAdapter = ListItemPriceAdapter(itemsList!!)
 
-        listView = findViewById(R.id.lvItemPrices)
-        listView!!.adapter = listItemPriceAdapter
+        recyclerView = findViewById(R.id.lvItemPrices)
+
+        val layoutManager= LinearLayoutManager(this)
+        recyclerView!!.setHasFixedSize(true)
+        recyclerView!!.layoutManager = layoutManager
+        recyclerView!!.adapter = listItemPriceAdapter
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

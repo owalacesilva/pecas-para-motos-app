@@ -3,7 +3,7 @@
               xmlns:app="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent"
+              android:layout_height="wrap_content"
               android:paddingBottom="15dp">
 
     <TextView
@@ -18,13 +18,12 @@
             android:layout_height="match_parent"
             android:layout_weight="3">
 
-        <faranjit.currency.edittext.CurrencyEditText
-            android:id="@+id/etItemPrice"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:inputType="numberDecimal"
-            android:textColor="@android:color/white" />
+        <br.com.pecasparamotos.utils.CurrencyEditText
+                android:id="@+id/etItemPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@android:color/white"/>
         <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="0dp"

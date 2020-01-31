@@ -16,13 +16,15 @@ import androidx.appcompat.widget.Toolbar
 import androidx.core.content.FileProvider
 import androidx.core.content.res.ResourcesCompat
 import br.com.pecasparamotos.R
-import br.com.pecasparamotos.adapters.ReportItemListAdapter
 import br.com.pecasparamotos.models.Item
 import br.com.pecasparamotos.utils.Utils
 import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
 import java.util.*
+import java.text.SimpleDateFormat
+import java.text.DateFormat
+
 
 class ReportPreviewActivity : AppCompatActivity() {
 
@@ -55,11 +57,21 @@ class ReportPreviewActivity : AppCompatActivity() {
         // View containers
         val divReviewedItems: ViewGroup = findViewById(R.id.divReviewedItems)
         val divAnnotations: ViewGroup = findViewById(R.id.divAnnotations)
+        val tvFormattedLocalDate: TextView = findViewById(R.id.tvFormattedLocalDate)
 
+        val dateFormat = DateFormat.getDateInstance(DateFormat.FULL, Locale("pt", "BR"))
+        val formattedDate = dateFormat.format(Date(System.currentTimeMillis()))
+        tvFormattedLocalDate.text = formattedDate
+        // addTotalTextViewInViewGroup("Valido até", formattedDate, divReviewedItems)
+
+        var totalValue: Double = 0.0
         for (item in itemList!!) {
             // Iterate list items for save in file
             addTextViewInViewGroup("• " + item.name, item.price, divReviewedItems)
+            totalValue += item.price
         }
+
+        addTotalTextViewInViewGroup("Total", Utils.formatToCurrency(totalValue), divReviewedItems)
 
         // Save comments
         drawAnnotationToLayout(annotations!!, divAnnotations)
@@ -214,6 +226,54 @@ class ReportPreviewActivity : AppCompatActivity() {
         tvItemPrice.text = Utils.formatToCurrency(itemPrice)
         tvItemPrice.setTextColor(Color.BLACK)
         tvItemPrice.textSize = 12f
+        tvItemPrice.typeface = typeface
+        rightSide.addView(tvItemPrice)
+
+        container.addView(leftSide, tvLayoutParams)
+        container.addView(rightSide, tvLayoutParams)
+        viewGroup.addView(container, layoutParams)
+    }
+
+    /**
+     * Add textview component inside View group
+     *
+     * @param textContent
+     * @param viewGroup
+     */
+    private fun addTotalTextViewInViewGroup(caption: String, value: String, viewGroup: ViewGroup) {
+        val layoutParams = LinearLayout.LayoutParams(
+            LinearLayout.LayoutParams.MATCH_PARENT,
+            LinearLayout.LayoutParams.WRAP_CONTENT
+        )
+        layoutParams.setMargins(0, 0, 0, 20)
+        layoutParams.weight = 1f
+
+        val tvLayoutParams = LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT)
+        tvLayoutParams.weight = 1f
+
+        val container = LinearLayout(this)
+        container.orientation = LinearLayout.HORIZONTAL
+
+        val leftSide = LinearLayout(this)
+        leftSide.orientation = LinearLayout.HORIZONTAL
+        leftSide.gravity = Gravity.LEFT
+
+        val rightSide = LinearLayout(this)
+        rightSide.orientation = LinearLayout.HORIZONTAL
+        rightSide.gravity = Gravity.RIGHT
+
+        val typeface = ResourcesCompat.getFont(this, R.font.calibri)
+        val tvItemName = TextView(this)
+        tvItemName.text = caption
+        tvItemName.setTextColor(Color.BLACK)
+        tvItemName.textSize = 16f
+        tvItemName.typeface = typeface
+        leftSide.addView(tvItemName)
+
+        val tvItemPrice = TextView(this)
+        tvItemPrice.text = value
+        tvItemPrice.setTextColor(Color.BLACK)
+        tvItemPrice.textSize = 16f
         tvItemPrice.typeface = typeface
         rightSide.addView(tvItemPrice)
 
